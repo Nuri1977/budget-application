@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @payment %>
+<%= @payment.category.user.name%>
+<%= @payment.category.id %>
 
 <div>
   <%= link_to "Edit this payment", edit_payment_path(@payment) %> |

@@ -12,7 +12,6 @@ class PaymentsController < ApplicationController
 
   # GET /payments/new
   def new
-    @category = Category.find(params[:id])
     @payment = Payment.new
   end
 
