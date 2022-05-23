@@ -7,7 +7,9 @@ class CategoriesController < ApplicationController
   end
 
   # GET /categories/1
-  def show; end
+  def show
+    @categories = current_user.categories
+  end
 
   # GET /categories/new
   def new
