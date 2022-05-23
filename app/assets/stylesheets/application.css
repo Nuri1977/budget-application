@@ -62,17 +62,12 @@ a:hover {
   text-decoration: inherit;
 }
 
-.container {
-  max-width: 500px;
-  margin: auto;
-}
-
 .bg-primary {
-  background: var(--primary);
+  background-color: var(--primary) !important;
 }
 
 .bg-secondary {
-  background: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .text-terciary {
