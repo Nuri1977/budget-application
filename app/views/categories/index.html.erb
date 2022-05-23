@@ -1,13 +1,24 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Categories</h1>
-
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= link_to category  do %>
-      <%= render category %>
+<div class="flex flex-col justify-between min-h-screen">
+  <section class="container mx-auto flex justify-start items-center bg-primary text-white font-light px-3 py-4">
+    <%= link_to "#" do %>
+      <i class="fa-solid fa-bars fa-xl"></i>
     <% end %>
-  <% end %>
+    <h5 class="font-light grow text-center">CATEGORIES</h5>
+  </section>
+  <p style="color: green"><%= notice %></p>
+
+  <div id="categories" class="grow">
+    <% @categories.each do |category| %>
+      <%= link_to category  do %>
+        <%= render category %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="bg-secondary p-4 text-center text-3xl text-white font-light">
+    <%= link_to "New Category", new_category_path, class: "border border-white hover:bg-blue-700 block p-4 rounded" %>
+  </div>
+
+
 </div>
 
-<%= link_to "New category", new_category_path %>
+
