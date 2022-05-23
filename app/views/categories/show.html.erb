@@ -1,10 +1,28 @@
-<p style="color: green"><%= notice %></p>
+<div class="flex flex-col justify-between min-h-screen">
+  <div class="container mx-auto flex justify-start items-center bg-primary text-white font-light px-3 py-4">
+    <%= link_to categories_path do %>
+      <i class="fa-solid fa-arrow-left fa-xl "></i>
+    <% end %>
+    <h5 class="font-light grow text-center">Ttransactions <%= @category.name %></h5>
+  </div>
 
-<%= render @category %>
+  <p style="color: green"><%= notice %></p>
+
+  <div class="grow">
+    <% @category.payments.each do |payment| %>
+      <div class="flex justify-between items-center m-3 p-3 bg-white text-terciary">
+        <div>
+          <h5><%= payment.name %></h5>
+          <h5><%= payment.created_at.strftime("%Y-%m-%d") %></h5>
+        </div>
+        <h5>$<%= payment.amount %></h5>
+      </div>
+    <% end %>
+    <h5 class="m-3 p-3 bg-white text-terciary text-center text-2xl">Total payments  $<%= @category.payments.map {|payment| payment.amount}.sum %></h5>
+  </div>
+
+  <div class="bg-secondary p-4 text-center text-3xl text-white font-light">
+    <%= link_to "New Transaction", new_payment_path, class: "border border-white hover:bg-blue-700 block p-4 rounded" %>
+  </div>
 
 <div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
-  <%= link_to "New payment", new_payment_path %>
-  <%= button_to "Destroy this category", @category, method: :delete %>
-</div>

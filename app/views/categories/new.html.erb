@@ -1,9 +1,11 @@
-<h1>New category</h1>
+<div class="flex flex-col">
 
-<%= render "form", category: @category %>
+  <section class="container mx-auto flex justify-start items-center bg-primary text-white font-light px-3 py-4">
+    <%= link_to categories_path do %>
+      <i class="fa-solid fa-arrow-left fa-xl "></i>
+    <% end %>
+    <h5 class="font-light grow text-center">ADD CATEGORY</h5>
+  </section>
 
-<br>
-
-<div>
-  <%= link_to "Back to categories", categories_path %>
+  <%= render "form", category: @category %>
 </div>
