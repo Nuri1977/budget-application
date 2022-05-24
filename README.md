@@ -14,6 +14,10 @@
 
  [live link](https://pay-tracker-nuri.herokuapp.com/)
 
+## Video Presentation
+
+[video link](https://www.loom.com/share/85466c30378f4bd1b47addf5127a1fe5)
+
 
 ## Getting Started
 
