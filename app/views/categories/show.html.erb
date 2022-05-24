@@ -9,7 +9,7 @@
   <p style="color: green"><%= notice %></p>
 
   <div class="grow">
-    <% @category.payments.each do |payment| %>
+    <% @payments.each do |payment| %>
       <div class="flex justify-between items-center m-3 p-3 bg-white text-terciary">
         <div>
           <h5><%= payment.name %></h5>
