@@ -13,12 +13,7 @@
   </head>
 
   <body class="bg-gray-100">
-    <% if notice %>
-      <p><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p><%= alert %></p>
-    <% end %>
+    <%= render partial: "layouts/navbar" %>
     <%= yield %>
   </body>
 </html>
