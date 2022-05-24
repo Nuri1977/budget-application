@@ -3,12 +3,12 @@ class CategoriesController < ApplicationController
 
   # GET /categories
   def index
-    @categories = current_user.categories
+    @categories = current_user.categories.order(created_at: :desc)
   end
 
   # GET /categories/1
   def show
-    @categories = current_user.categories
+    @payments = @category.payments.order(created_at: :desc)
   end
 
   # GET /categories/new
