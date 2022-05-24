@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
- [live link](https://struga-recipes.herokuapp.com/)
+ [live link](https://pay-tracker-nuri.herokuapp.com/)
 
 
 ## Getting Started
