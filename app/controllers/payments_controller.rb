@@ -16,7 +16,9 @@ class PaymentsController < ApplicationController
   end
 
   # GET /payments/1/edit
-  def edit; end
+  def edit
+    @category = current_user.categories
+  end
 
   # POST /payments
   def create
