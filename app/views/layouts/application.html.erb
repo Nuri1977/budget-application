@@ -12,8 +12,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-gray-100">
-    <%= render partial: "layouts/navbar" %>
-    <%= yield %>
+  <body>
+    <main class=" bg-gray-100 container mx-auto max-w-sm">
+      <%= render partial: "layouts/navbar" %>
+      <%= yield %>
+    </main>
+
   </body>
 </html>

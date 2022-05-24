@@ -1,24 +1,74 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# PayTracker application
 
-Things you may want to cover:
+> This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby
+- Ruby on Rails
+- PostgreSQL
 
-* Configuration
+## Live Demo (if available)
 
-* Database creation
+ [live link](https://struga-recipes.herokuapp.com/)
 
-* Database initialization
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
 
-* Deployment instructions
+> - Run `git clone https://github.com/Nuri1977/budget-application`
+> - Run `cd budget-application` to change to project root directory
+> - Run `bundle install`
+> - Run `rails db:create`
+> - Run `rails db:migrate`
+> - Run `rails db:seed` to create initial data
+> - Run `rails s` to run the app
+> - Opn `http://localhost:3000/` on your browser
 
-* ...
+
+### Prerequisites
+- Text Editor (e.g. VS Code, Sublime text)
+- git
+- Node.js
+
+### Setup
+
+### Install
+- Ruby
+- Rails
+- PostgreSQL
+
+
+### Run tests
+ - Run `rspec`
+
+
+## Authors
+
+👤 **Nuri Lacka**
+
+- GitHub: [@Nuri1977](https://github.com/Nuri1977)
+- Twitter: [@Lackanuri](https://twitter.com/LackaNuri)
+- LinkedIn: [@nurilacka](https://www.linkedin.com/in/nuri-lacka-7141b01ba/)
+-
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
