@@ -8,5 +8,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'splash#index'
+  unauthenticated do
+    root "splash#index"
+  end
+
+  authenticated :user do
+    root 'categories#index', as: :authenticated_root
+  end
 end
