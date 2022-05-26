@@ -1,0 +1,5 @@
+<div id="<%= dom_id category %>" class="flex justify-between items-center m-3 p-3 bg-white text-terciary">
+  <%=image_tag category.icon, class: "w-16 h-16" %>
+  <h5 class="grow text-left px-3"><%= category.name %></h5>
+  <h5>$<%= category.payments.map {|payment| payment.amount}.sum %></h5>
+</div>
